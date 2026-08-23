@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <storepickup>
+                <active>0</active>
+                <model>Essentia\StorePickup\Model\Carrier\StorePickup</model>
+                <title>Retirado na Loja</title>
+                <name>Retirada na loja</name>
+                <sort_order>10</sort_order>
+            </storepickup>
+        </carriers>
+    </default>
+</config>

@@ -10,7 +10,7 @@ Aplicação web para gerenciamento de clientes desenvolvida com Laravel.
 
 A documentação de instalação, execução e decisões técnicas está disponível em:
 
-`customer-management/README.md`
+[README da Tarefa 1](customer-management/README.md)
 
 ### 2. Magento Store Pickup
 
@@ -18,7 +18,7 @@ Módulo para Magento Open Source que adiciona a opção de retirada gratuita na 
 
 A documentação de instalação, configuração e validação está disponível em:
 
-`magento-store-pickup/Essentia/StorePickup/README.md`
+[README da Tarefa 2](magento-store-pickup/Essentia/StorePickup/README.md)
 
 ## Estrutura
 

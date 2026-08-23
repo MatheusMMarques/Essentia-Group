@@ -24,22 +24,27 @@ Aplicação web para gerenciamento de clientes, desenvolvida como teste técnico
 ## Instalação
 
 ```bash
-git clone <url-do-repositorio>
-cd customer-management
+git clone https://github.com/MatheusMMarques/Essentia-Group.git
+cd Essentia-Group/customer-management
 composer install
 ```
 
-Crie o arquivo de ambiente e gere a chave da aplicação:
+No macOS, Linux, Git Bash e demais terminais compatíveis com Unix, crie o arquivo de ambiente com:
 
 ```bash
 cp .env.example .env
-php artisan key:generate
 ```
 
-No Windows PowerShell, o arquivo também pode ser criado com:
+No Windows PowerShell, use:
 
 ```powershell
 Copy-Item .env.example .env
+```
+
+Depois, gere a chave da aplicação:
+
+```bash
+php artisan key:generate
 ```
 
 Crie o banco SQLite vazio:
@@ -55,11 +60,18 @@ php artisan migrate
 php artisan storage:link
 ```
 
-Instale e compile os assets:
+Instale e compile os assets no macOS, Linux, Git Bash ou terminal comum:
 
 ```bash
 npm install
 npm run build
+```
+
+No Windows PowerShell, se a `ExecutionPolicy` bloquear o wrapper `npm.ps1`, use o executável equivalente como fallback:
+
+```powershell
+npm.cmd install
+npm.cmd run build
 ```
 
 ## Execução
@@ -75,6 +87,8 @@ A aplicação estará disponível, por padrão, em `http://localhost:8000`. Dura
 ```bash
 npm run dev
 ```
+
+No Windows PowerShell com o mesmo bloqueio de `npm.ps1`, use `npm.cmd run dev`.
 
 O projeto também mantém o script padrão de desenvolvimento do Laravel:
 
